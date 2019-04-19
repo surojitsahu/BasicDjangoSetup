@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">	
+	<title>test</title>
+
+	<!-- <style>
+		body{
+			background: lightgreen;
+			color: white
+
+		}
+h1{border: 10px dotted yellow;
+
+
+}
+	</style> -->
+
+</head>
+<body>
+<h1>Hello this page is coming from template</h1>
+<ul>
+	<li>{{msg|upper}}</li>
+	<li>{{s|safe}}</li>
+	<li>{{s}}</li>
+	<li>{{name|urlencode }}</li>
+	<li>{{name|safe}}</li>
+	<li>{{rollno}}</li>
+	<li>{{marks}}</li>
+
+</ul>
+<img src="{%static 'images/pexels-photo-1020315.jpeg'%}">
+<img src="{%static 'images/pexels-photo-1020315.jpeg'%}">
+<img src="{%static 'images/pexels-photo-1020315.jpeg'%}">
+<img src="{%static 'images/pexels-photo-1020315.jpeg'%}">
+<img src="{%static 'images/pexels-photo-1020315.jpeg'%}">
+<img src="{%static 'images/pexels-photo-1020315.jpeg'%}">
+</body>
+</html>
