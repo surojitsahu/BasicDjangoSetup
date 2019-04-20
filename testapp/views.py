@@ -37,6 +37,9 @@ def wish(request):
 		else:
 			msg=msg+'Night!!'
 
-		return render(request,'testapp/result.html',{'msg':msg})			
-			
+		return render(request,'testapp/result.html',{'msg':msg})
+	
+def employee_table(request):
+	employees=Employee.objects.all()
+	return render(request,'testapp/empdetails.html',{'employees':employees})			
 		
