@@ -24,4 +24,5 @@ urlpatterns = [
     path('time/',views.time_info),
     path('third/',views.third_view,),
     path('wish/',views.wish)
+    path('employee/',views.employee_table)
 ]
